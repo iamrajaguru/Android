@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CameraPermission</string>
+    <string name="capture_image">Capture Image</string>
+    <string name="todo">TODO</string>
+</resources>

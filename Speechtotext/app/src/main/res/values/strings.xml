@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Speechtotext</string>
+    <string name="ur_apikey">AIzaSyDvmcL4VDFQhsPICZ0q5sHdJ3W-JDHzhUc</string>
+    <string name="todo">TODO</string>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "242028317592",
+    "firebase_url": "https://speechtotext-5184b.firebaseio.com",
+    "project_id": "speechtotext-5184b",
+    "storage_bucket": "speechtotext-5184b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242028317592:android:976c41bb28df8a82",
+        "android_client_info": {
+          "package_name": "com.example.speechtotext"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "242028317592-pbs7k4fpihbhj2nor0at1oi9rt4rofhe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.speechtotext",
+            "certificate_hash": "c423b6da62360aa83e6890674304cda9db246df6"
+          }
+        },
+        {
+          "client_id": "242028317592-nam3crmjevtpafv8rdgt1n8tledknhig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlKNSuA3MqcQihutmnZwER9n2FQHWMacM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "242028317592-nam3crmjevtpafv8rdgt1n8tledknhig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

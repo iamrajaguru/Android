@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name" translatable="false">EmonUI</string>
+    <string name="sun_exchange" translatable="false">Sun Exchange</string>
+    <string name="sign_in" translatable="false">Sign In</string>
+    <string name="email_or_username" translatable="false">Email or username</string>
+    <string name="enter_email_or_username" translatable="false">Enter email or username</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="enter_password" translatable="false">Enter password</string>
+    <string name="signin" translatable="false">Sign In</string>
+</resources>

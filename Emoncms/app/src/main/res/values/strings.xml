@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="sun_exchange">Sun Exchange</string>
+    <string name="enter_email_or_username">Enter email or username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="do_not_have_an_account">Do not have an account?</string>
+
+
+
+</resources>

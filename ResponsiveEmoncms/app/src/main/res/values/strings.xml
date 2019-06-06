@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ResponsiveEmoncms</string>
+    <!--<string name="email_address_or_username">Email address or username</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter password</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="sign_in">Sign in</string>-->
+</resources>
