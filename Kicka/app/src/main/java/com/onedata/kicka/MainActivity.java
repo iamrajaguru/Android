@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
    TextView e1,e2;
     Button btn;
     String url="http://192.168.1.102:8083/setuser";
+    RequestQueue requestQueue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,15 +46,23 @@ public class MainActivity extends AppCompatActivity {
     }
     private void jsonparse(){
 
-      /*  Toast.makeText(getApplicationContext(),"Entry2",Toast.LENGTH_SHORT).show();*/
-        JsonRequest<JSONObject> jsonRequest=new JsonRequest(Request.Method.POST, "http://192.168.1.102:8083/setuser", null,
+         JSONObject obj=new JSONObject();
+
+        try {
+            obj.put("name","venkat");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        /*  Toast.makeText(getApplicationContext(),"Entry2",Toast.LENGTH_SHORT).show();*/
+        JsonObjectRequest jsonRequest=new JsonObjectRequest(Request.Method.POST, "http://192.168.1.102:8083/setuser", obj,
                 new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 Toast.makeText(getApplicationContext(),"Entry",Toast.LENGTH_SHORT).show();
                 try {
                     e1.setText(response.getString("name"));
-                    e2.setText(response.getString("password"));
+                   // e2.setText(response.getString("password"));
                 }
                 catch (JSONException e) {
                     e.printStackTrace();
@@ -63,10 +72,11 @@ public class MainActivity extends AppCompatActivity {
                             new Response.ErrorListener() {
                         @Override
                         public void onErrorResponse(VolleyError error) {
-                            error.printStackTrace();
+                            Toast.makeText(getApplicationContext(),error.toString()+"Entry2",Toast.LENGTH_SHORT).show();
                         }
         });
-                    RequestQueue requestQueue= Volley.newRequestQueue(getApplicationContext());
+
+                    requestQueue= Volley.newRequestQueue(getApplicationContext());
                     requestQueue.add(jsonRequest);
 
 
