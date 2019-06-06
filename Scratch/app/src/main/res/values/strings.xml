@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Scratch</string>
+    <string name="sun_exchange">Sun Exchange</string>
+    <string name="sign_in">Sign In</string>
+    <!--  <string name="enter_email_or_username">Enter email or username</string>
+    <string name="enter_password">Enter password</string>-->
+    <string name="signin">Sign In</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="do_you_have_an_account">Do not have an account?</string>
+    <string name="sign_up">Sign Up</string>
+
+    <string name="email_address_or_username">Email address or username</string>
+    <string name="enter_email_or_username">Enter email or username</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter password</string>
+    <string name="join">Join</string>
+    <string name="first_name">First name</string>
+    <string name="enter_first_name">Enter first name</string>
+    <string name="last_name">Last name</string>
+    <string name="enter_last_name">Enter last name</string>
+    <string name="username">Username</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="email_address">Email address</string>
+    <string name="enter_email">Enter email</string>
+    <string name="passwordn">Password</string>
+    <string name="enter_npassword">Enter password</string>
+    <string name="re_enter_password">Re-enter Password</string>
+    <string name="reenter_password">Re-enter password</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="personal_info">Personal info</string>
+    <string name="firstname">First name:</string>
+    <string name="lastname">Last name</string>
+    <string name="user_name">Username:</string>
+    <string name="email">Email</string>
+    <string name="first__name" />
+    <string name="last__name" />
+    <string name="e_mail" />
+    <string name="User__name" />
+    <string name="save_changes">Save Changes</string>
+    <string name="reset">Reset</string>
+
+
+</resources>
