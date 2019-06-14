@@ -1,5 +1,6 @@
 package com.onedata.volleytest;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -32,7 +33,11 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                JsonObjectRequest jsonRequest=new JsonObjectRequest(Request.Method.POST, "http://192.168.1.102:8083/setuser", null,
+
+                Intent i = new Intent(MainActivity.this,graph.class);
+                startActivity(i);
+
+               /* JsonObjectRequest jsonRequest=new JsonObjectRequest(Request.Method.POST, "http://192.168.1.102:8083/setuser", null,
                         new Response.Listener< JSONObject >() {
                             @Override
                             public void onResponse(JSONObject response) {
@@ -56,18 +61,8 @@ public class MainActivity extends AppCompatActivity {
 
                 );
 
-               /* {
-                    @Override
-                    protected Response parseNetworkResponse(NetworkResponse response) {
-                        return null;
-                    }
-
-                    @Override
-                    public int compareTo(Object o) {
-                        return 0;
-                    }
-                };*/ RequestQueue requestQueue= Volley.newRequestQueue(getApplicationContext());
-                requestQueue.add(jsonRequest);
+              RequestQueue requestQueue= Volley.newRequestQueue(getApplicationContext());
+                requestQueue.add(jsonRequest);*/
 
             }
         });

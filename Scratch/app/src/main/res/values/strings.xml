@@ -51,6 +51,15 @@
     <string name="signni_in">Sign In</string>
     <string name="sign_in">Sign In</string>
     <string name="userimg">TODO</string>
+    <string name="forgoti_password">Forgot Password</string>
+    <string name="edit_phnum" />
+    <string name="phn_num">Phone Number</string>
+    <string name="enterb">Enter</string>
+    <string name="edit_email_or_phnum" />
+    <string name="enter_email_or_phone_number">Enter email or phone number</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="forgot_passwords">Forgot Password</string>
+    <string name="line">Line</string>
 
 
 </resources>

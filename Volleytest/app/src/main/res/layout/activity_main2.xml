@@ -1,9 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".Main2Activity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/dash_board"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgcard"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/username"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+
+
+                        android:autofillHints="Image"
+                        android:contentDescription="@string/userprofile"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="30dp"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/user"
+                        tools:targetApi="o" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/username_gmail_com"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="50dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+
+            android:layout_height="170dp">
+
+            <ImageView
+                android:onClick="ShowPopUp"
+                android:id="@+id/diag"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:contentDescription="@string/todo"
+                android:paddingTop="20dp"
+
+                android:paddingBottom="10dp"
+                android:src="@drawable/graph" />
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

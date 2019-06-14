@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    TextView tvSignUp;
+    TextView tvSignUp,forgotpsd;
     Button btn;
 
     @Override
@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
         setContentView(R.layout.activity_main);
+        forgotpsd=findViewById(R.id.forgotpassword);
         tvSignUp=findViewById(R.id.tVSignUp);
         btn=findViewById(R.id.btnSignIn);
         tvSignUp.setOnClickListener(new View.OnClickListener() {
@@ -33,6 +34,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(),Main3Activity.class);
+                startActivity(i);
+                finish();
+
+            }
+        });
+        forgotpsd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),Forgotpassword.class);
                 startActivity(i);
                 finish();
 

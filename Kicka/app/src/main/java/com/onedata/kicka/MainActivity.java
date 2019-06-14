@@ -14,6 +14,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.JsonRequest;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 
@@ -23,7 +24,7 @@ import org.json.JSONObject;
 public class MainActivity extends AppCompatActivity {
    TextView e1,e2;
     Button btn;
-    String url="http://192.168.1.102:8083/setuser";
+    String url="http://192.168.0.154/Guru/hello.php";
     RequestQueue requestQueue;
 
     @Override
@@ -39,12 +40,30 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                jsonparse();
-            }
+                requestQueue=Volley.newRequestQueue(MainActivity.this);
+                StringRequest Req=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        e1.setText(response);
+                        requestQueue.stop();
+
+                    }
+                }, new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(getApplicationContext(),error.toString(),Toast.LENGTH_SHORT).show();
+                        e1.setText("Something went wrong");
+                    }
+                });
+
+                }
+
+               /* jsonparse();*/
+
         });
 
     }
-    private void jsonparse(){
+  /*  private void jsonparse(){
 
          JSONObject obj=new JSONObject();
 
@@ -54,12 +73,12 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        /*  Toast.makeText(getApplicationContext(),"Entry2",Toast.LENGTH_SHORT).show();*/
-        JsonObjectRequest jsonRequest=new JsonObjectRequest(Request.Method.POST, "http://192.168.1.102:8083/setuser", obj,
+        *//*  Toast.makeText(getApplicationContext(),"Entry2",Toast.LENGTH_SHORT).show();*//*
+        JsonObjectRequest jsonRequest=new JsonObjectRequest(Request.Method.POST, "http:// 192.168.0.154:8080/seto", obj,
                 new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                Toast.makeText(getApplicationContext(),"Entry",Toast.LENGTH_SHORT).show();
+
                 try {
                     e1.setText(response.getString("name"));
                    // e2.setText(response.getString("password"));
@@ -82,6 +101,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    }
+    }*/
 }
 

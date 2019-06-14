@@ -20,7 +20,7 @@ public class Main3Activity extends AppCompatActivity {
         tVR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                Intent i = new Intent(getApplicationContext(),Pie.class);
                 startActivity(i);
                 finish();
             }
