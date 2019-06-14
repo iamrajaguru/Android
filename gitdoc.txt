@@ -1,0 +1,42 @@
+To get remote name:
+	git remote
+To get remote url:
+	git remote get-url origin
+To check existing remote:
+	git remote -v
+To rename remote:
+	git remote rename origin destination
+	# Change remote name from 'origin' to 'destination'
+TO change the url of existing remote :
+	git remote set-url remote-name url
+Get the URL for a Specific Remote:
+	git remote get-url <name>
+	eg:git remote get-url origin
+Changing a Remote Repository
+	git remote set-url <remote_name> <remote_repository_url>
+	ex:git remote set-url heroku https://git.heroku.com/fictional-remote-repository.git
+****************************************************************************************************
+					Branch
+**************************************** ************************************************************
+To create the branch:
+	 git branch <branch name>
+To checkout from that branch
+	git checkout <branch name>
+To push branch to remote(After commit push branch to remote)
+	git push -u origin <branch name>
+	
+	git branch -a
+To Merge a branch 
+	git checkout master
+	git pull origin master
+	git branch --merged
+	git merge <branch name>
+	git push origin master
+
+Note:
+ 1. if " bad head " error occurs follow this:
+	git init
+	git fetch
+	git status
+	& proceed further 
+2.Always pull before push the code
